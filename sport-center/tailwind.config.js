@@ -10,6 +10,7 @@ module.exports = {
         darkBlue: "#1d1e25",
         ligthGrey: "#fafafa",
         blue: "#355592",
+        orange: "#d97706",
       },
     },
   },

@@ -10,7 +10,7 @@
   <body>
 
   <section class="bg-[url('./public/images/hero-man.jpg')] bg-cover bg-center">
-  <header class="sticky top-0 z-10 " id="navbar">
+  <header class="sticky top-0  z-10 " id="navbar">
     <nav class="container mx-auto p-4 flex justify-around items-center">
       <div class="flex items-center">
         <img src="./public/images/logo.png" class="w-44" alt="">
@@ -102,10 +102,23 @@
           odio
           pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum repellendus
           architecto ducimus explicabo reiciendis alias quasi culpa libero amet similique nisi!</p>
+        <form class="flex flex-row gap-3 ">
+          <div class="mb-4 flex flex-row items-center">
+            <input type="number" id="boy" name="boy" class="mt-1 p-1 border border-gray-700 rounded w-full" placeholder="Your Height" >
+            <label for="boy" class="block text-gray-700 pl-2">cm</label>
+          </div>
+          <div class="mb-4 flex flex-row items-center">
+            <input type="number" id="kilo" name="kilo" class="mt-1 p-1 border border-gray-700 rounded w-full" placeholder="Your Weight" >
+            <label for="kilo" class="block text-gray-700 pl-2">kg</label>
+          </div>
+        </form>
       </div>
       <div class="flex flex-col">
         <p class="text-center font-bold">Your BMI</p>
         <img class="w-96" src="./public/images/bmi-index.jpg" alt="">
+        <div id="triangle-container" class="relative w-full ">
+          <div class="triangle" id="triangle"></div>
+        </div>
       </div>
     </div>
   </section>

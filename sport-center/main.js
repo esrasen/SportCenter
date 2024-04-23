@@ -4,6 +4,7 @@ window.addEventListener("scroll", (event) => {
     const scroll = window.scrollY;
     if (scroll > 60) {
         navbar.classList.add("bg-blue");
+
     }
 });
 
@@ -89,3 +90,25 @@ galleryDiv.addEventListener("click", (event) => {
     }
     gallery.src = imageArr[index];
 });
+
+// BMI CALCULATOR
+
+document.getElementById("boy").addEventListener("input", calculateBMI);
+document.getElementById("kilo").addEventListener("input", calculateBMI);
+
+function calculateBMI(){
+    const weight = document.getElementById("kilo").value;
+    const height = document.getElementById("height").value/100;
+    const bmi = weight / (height * height);
+
+    moveTriangle(bmi);
+
+}
+
+function moveTriangle(bmi){
+    const triangle = document.getElementById("triangle");
+    const containerWidth = document.getElementById("triangle-container").offsetWidth;
+    const position = (bmi/100)* containerWidth;
+
+    triangle.style.left = `${position}px`;
+}
