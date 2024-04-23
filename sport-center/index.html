@@ -8,41 +8,111 @@
     <title>Vite App</title>
   </head>
   <body>
-  <section class="bg-[url('./public/images/hero-man.jpg')] bg-cover bg-center ">
-  <header class="sticky top-0 z-10" id="navbar">
-    <nav class="container mx-auto p-6 flex justify-around items-center">
+
+  <section class="bg-[url('./public/images/hero-man.jpg')] bg-cover bg-center">
+  <header class="sticky top-0 z-10 " id="navbar">
+    <nav class="container mx-auto p-4 flex justify-around items-center">
       <div class="flex items-center">
         <img src="./public/images/logo.png" class="w-44" alt="">
       </div>
       <div class="flex space-x-8 text-ligthGrey font-bold">
-        <a href="#">Home</a>
-        <a href="#">Classes</a>
-        <a href="#">Trainer</a>
-        <a href="#">Review</a>
-        <a href="#">Contact</a>
-        <a href="#" class="bg-amber-500 rounded-md px-1 pb-1">JOIN US</a>
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#trainer">Trainer</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+        <a href="#joinus" class="bg-amber-500 rounded-md px-1 pb-1">JOIN US</a>
       </div>
     </nav>
   </header>
-    <section class="container mx-auto">
+    <section id="home" class="container mx-auto">
       <div class="flex items-center ">
         <div class="flex flex-col gap-5 pt-20 pl-40">
           <div>
-            <a href="#" class="bg-blue text-ligthGrey font-bold hover:bg-mainRedLigth px-4 py-1 rounded-sm">POWERFULL</a>
+            <a href="#" class="bg-blue text-ligthGrey font-bold hover:bg-amber-500 px-4 py-1 rounded-sm">POWERFULL</a>
           </div>
           <h1 class="text-6xl font-bold text-ligthGrey">Group</h1>
           <h1 class="text-6xl font-bold text-ligthGrey">Practice</h1>
           <h1 class="text-6xl font-bold text-ligthGrey">With Trainer</h1>
           <p class="text-ligthGrey font-bold  ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aspernatur at cumque dicta dolorum ducimus eligendi esse explicabo, itaque maiores maxime nemo obcaecati odit omnis quia rem, soluta tempora voluptatem. Dolorem ducimus est ipsam neque nisi officiis tempora voluptate voluptatum. Ab asperiores aspernatur doloremque ducimus eum expedita fugiat illum ipsum iste magni nam, quaerat, sapiente similique tempora voluptas voluptate voluptatibus?</p>
           <div>
-            <a href="#" class="bg-blue border-2 border-blue text-ligthGrey font-bold hover:bg-mainRedLigth px-6 py-2 rounded-sm">Sign Up</a>
-            <a href="#" class=" text-ligthGrey border-2 border-white font-bold hover:bg-mainRedLigth px-6 py-2 rounded-sm">Details</a>
+            <a href="#" class="bg-blue border-2 border-blue text-ligthGrey font-bold hover:bg-amber-500 px-6 py-2 rounded-sm">Sign Up</a>
+            <a href="#" class=" text-ligthGrey border-2 border-white font-bold hover:bg-amber-500 px-6 py-2 rounded-sm">Details</a>
           </div>
           <br>
         </div>
       </div>
     </section>
   </section>
-    <script type="module" src="/main.js"></script>
+
+  <div class="bg-sky-50 flex justify-center pt-10 pb-10 space-x-6">
+    <div class="box-border border-none h-28 w-56 p-6 border-4 bg-white pl-4 flex-col text-center">
+      <p class="font-extrabold text-blue">325</p>
+      <p class="font-extrabold">Course</p>
+    </div>
+    <div class="box-border border-none h-28 w-56 p-6 border-4 bg-white pl-4 flex-col text-center">
+      <p class="font-extrabold text-blue">405</p>
+      <p class="font-extrabold">Work Out</p>
+    </div>
+    <div class="box-border border-none h-28 w-56 p-6 border-4 bg-white pl-4 flex-col text-center">
+      <p class="font-extrabold text-blue">305</p>
+      <p class="font-extrabold">Working Hour</p>
+    </div>
+    <div class="box-border border-none h-28 w-56 p-6 border-4 bg-white pl-4 flex-col text-center">
+      <p class="font-extrabold text-blue">705</p>
+      <p class="font-extrabold">Happy Client</p>
+    </div>
+  </div>
+
+
+  <section id="classes" class="bg-ligthGrey py-12 ">
+    <div class=" text-center">
+      <h2 class="text-4xl font-bold text-blue">Our Classes</h2>
+      <hr class="border-4 border-amber-500 my-8 w-28 mx-auto rounded">
+      <p class="px-72">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dignissimos incidunt libero necessitatibus, nobis numquam obcaecati quia sapiente sit tempora.</p>
+    </div>
+
+    <div id="btnsDiv" class="container mx-auto grid grid-cols-8 gap-10 mt-10">
+      <button id="yoga" class="bg-blue text-ligthGrey col-start-3 py-2 rounded hover:bg-amber-500 font-extrabold">Yoga</button>
+      <button id="group" class="bg-blue text-ligthGrey rounded hover:bg-amber-500 font-extrabold">Group</button>
+      <button id="solo" class="bg-blue text-ligthGrey rounded hover:bg-amber-500 font-extrabold">Solo</button>
+      <button id="stretching" class="bg-blue text-ligthGrey rounded hover:bg-amber-500 font-extrabold">Stretching</button>
+    </div>
+    <div id="feat-cont" class="container mx-auto flex flex-wrap align-middle gap-10 py-10 justify-center">
+      <div class="flex flex-col justify-center align-middle gap-5 w-5/12">
+        <h2 class="text-2xl font-extrabold text-gray-600">Why Are You Yoga ?</h2>
+        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nihil recusandae. Atque, illum corporis
+          odio
+          pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum repellendus
+          architecto ducimus explicabo reiciendis alias quasi culpa libero amet similique nisi!</p>
+        <h2 class="text-2xl font-extrabold text-gray-600">When comes Yoga Your Time.</h2>
+        <p class="text-gray-700">Saturday-Sunday: 8:00-10:00 am</p>
+        <p class="text-gray-700">Monday-Tuesday: 10:00-12:00 pm</p>
+        <p class="text-gray-700">Wednesday-Friday: 3:00-6:00 pm</p>
+      </div>
+      <img class="w-96" src="./public/images/yoga.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="bg-ligthGrey py-12">
+    <div class="container mx-auto flex flex-wrap align-middle gap-10 py-10 justify-center">
+      <div class="flex flex-col justify-center align-middle gap-10 w-5/12">
+        <h2 class="text-4xl font-bold text-blue">BMI Calculator</h2>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nihil recusandae. Atque, illum corporis
+          odio
+          pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum repellendus
+          architecto ducimus explicabo reiciendis alias quasi culpa libero amet similique nisi!</p>
+      </div>
+      <div class="flex flex-col">
+        <p class="text-center font-bold">Your BMI</p>
+        <img class="w-96" src="./public/images/bmi-index.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script type="module" src="/main.js"></script>
   </body>
 </html>
