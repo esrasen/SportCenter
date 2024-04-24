@@ -2,11 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-.triangle{
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 20px solid orange;
-  position: absolute;
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid orange;
+    position: absolute;
+}
+
+:root {
+    --text-color: #fff;
+    --main-color: #355592;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 35%;
+    right: 35%;
+    bottom: 0;
+    width: 30%;
+    transition: all 0.5s ease;
+    border-top: 8px solid var(--main-color);
+    border-bottom: 8px solid var(--main-color);
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 35%;
+    height: 30%;
+    transition: all 0.5s ease;
+    border-right: 8px solid var(--main-color);
+    border-left: 8px solid var(--main-color);
+}
+
+.box:hover::before {
+    width: 70%;
+    left: 15%;
+}
+
+.box:hover::after {
+    height: 45%;
+    top: 40%;
+}
+
+.content {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 80%;
+    height: 30%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    transform: translateY(-50%);
+    transition: 0.3s linear;
+    opacity: 0;
+}
+
+.box:hover .content {
+    transform: translateY(-10%);
+    opacity: 1;
+}
+
+.content h4 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.content h3 {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.content2 {
+    position: absolute;
+    bottom: 25px;
+    left: 5%;
+    width: 90%;
+    height: 20%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    transform: translateY(-50%);
+    transition: 0.3s linear;
+    opacity: 0;
+}
+
+.box:hover .content2 {
+    transform: translateY(-10%);
+    opacity: 1;
 }
