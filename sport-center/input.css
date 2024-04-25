@@ -10,9 +10,26 @@
     border-bottom: 20px solid orange;
     position: absolute;
 }
+.yoga ,.group ,.solo ,.stretching {
+    position: relative;
+}
+
+.yoga:hover::after ,.group:hover::after ,.solo:hover::after ,.stretching:hover::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top:100%;
+    left: 40%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid orange;
+}
+
 
 .card:hover .shop{
     background-color: var(--main-color);
+    color: var(--text-color);
     border-radius: 5px;
 }
 
@@ -109,4 +126,41 @@
 .box:hover .content2 {
     transform: translateY(-10%);
     opacity: 1;
+}
+.review{
+    position: relative;
+}
+
+.review-clip{
+    position: absolute;
+    background-color: #7ba7d2;
+    width: 10%;
+    height: 30%;
+    bottom: -30%;
+    right: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.review-clip2{
+    position: absolute;
+    background-color: #7ba7d2;
+    width: 10%;
+    height: 30%;
+    bottom: -30%;
+    left: 0;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.transparent-header{
+    transition: background-color 0.5s ease;
+}
+
+.solid-header{
+    transition: background-color 0.5s ease;
+    background-color: #355592;
+}
+
+.section-header{
+    background: url("./public/images/hero-man.jpg") no-repeat center ;
+    background-size: cover;
 }

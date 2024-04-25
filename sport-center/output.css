@@ -735,6 +735,11 @@ video {
   clear: none;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -760,14 +765,6 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
-}
-
-.mr-24 {
-  margin-right: 6rem;
 }
 
 .mt-1 {
@@ -885,12 +882,20 @@ video {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-28 {
   height: 7rem;
 }
 
 .h-4 {
   height: 1rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-28 {
@@ -1807,6 +1812,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -2006,10 +2015,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/public\/images\/hero-man\.jpg\'\)\] {
-  background-image: url('./public/images/hero-man.jpg');
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2028,10 +2033,6 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .bg-fixed {
@@ -2061,10 +2062,6 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-repeat {
@@ -2312,6 +2309,10 @@ video {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -2807,8 +2808,25 @@ video {
   position: absolute;
 }
 
+.yoga ,.group ,.solo ,.stretching {
+  position: relative;
+}
+
+.yoga:hover::after ,.group:hover::after ,.solo:hover::after ,.stretching:hover::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top:100%;
+  left: 40%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid orange;
+}
+
 .card:hover .shop{
   background-color: var(--main-color);
+  color: var(--text-color);
   border-radius: 5px;
 }
 
@@ -2905,6 +2923,46 @@ video {
 .box:hover .content2 {
   transform: translateY(-10%);
   opacity: 1;
+}
+
+.review{
+  position: relative;
+}
+
+.review-clip{
+  position: absolute;
+  background-color: #7ba7d2;
+  width: 10%;
+  height: 30%;
+  bottom: -30%;
+  right: 0;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+          clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.review-clip2{
+  position: absolute;
+  background-color: #7ba7d2;
+  width: 10%;
+  height: 30%;
+  bottom: -30%;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.transparent-header{
+  transition: background-color 0.5s ease;
+}
+
+.solid-header{
+  transition: background-color 0.5s ease;
+  background-color: #355592;
+}
+
+.section-header{
+  background: url("./public/images/hero-man.jpg") no-repeat center ;
+  background-size: cover;
 }
 
 @media (min-width: 640px) {
