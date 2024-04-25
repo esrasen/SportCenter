@@ -11,6 +11,11 @@
     position: absolute;
 }
 
+.card:hover .shop{
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
 :root {
     --text-color: #fff;
     --main-color: #355592;
