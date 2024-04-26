@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mainRed: "tomato",
-        mainRedLigth: "#f6866a",
-        darkGrey: "#9095a7",
-        darkBlue: "#1d1e25",
-        ligthGrey: "#fafafa",
-        blue: "#355592",
-        orange: "#d97706",
-        lightBlue: "#7ba7d2",
+        'darkGrey': '#9095a7',
+        'darkBlue': '#1d1e25',
+        'ligthGrey': '#fafafa',
+        'blue': '#355592',
+        'orange': '#d97706',
+        'lightBlue': '#7ba7d2',
+        'yellow': '#FFD43B',
+        'skyBlue': '#f2f8fe',
       },
     },
   },

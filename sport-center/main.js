@@ -3,12 +3,10 @@ const navbar = document.querySelector("#navbar");
 window.addEventListener("scroll", (event) => {
     const scroll = window.scrollY;
     if (scroll > 60) {
-
         navbar.classList.add("solid-header");
 
     }else {
         navbar.classList.remove("solid-header");
-
     }
 });
 
@@ -94,6 +92,8 @@ galleryDiv.addEventListener("click", (event) => {
     }
     gallery.src = imageArr[index];
 });
+
+
 
 // BMI CALCULATOR
 
