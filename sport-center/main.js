@@ -13,33 +13,52 @@ window.addEventListener("scroll", (event) => {
 const featHeader = document.querySelector("#feat-cont h2");
 const featParag = document.querySelector("#feat-cont p");
 const featImg = document.querySelector("#feat-cont img");
+const featSubTitle = document.querySelector("#feat-cont #subtitle");
+const featList = document.querySelector("#feat-cont ul");
 const featCont = document.querySelector("#feat-cont");
 
 const yogaFunc = () => {
-    featHeader.textContent = "Yoga";
+    featHeader.textContent = "Why Are You Yoga ?";
     featParag.textContent =
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nihil recusandae. Atque, illum corporis odio pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum repellendus architecto ducimus explicabo reiciendis alias quasi culpa libero amet similique nisi!";
+    featSubTitle.textContent = "When comes Yoga Your Time.";
     featImg.src = "./public/images/yoga.jpg";
 };
 
 const groupFunc = () => {
-    featHeader.textContent = "Group";
+    featHeader.textContent = "Why Are You Group ?";
     featParag.textContent =
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nihil recusandae. ";
+    featSubTitle.textContent = "When comes Group Your Time.";
+    featList.innerHTML =
+        "Saturday-Sunday: 9:00-10:00 am<br><br>" +
+        "Monday-Tuesday: 12:00-14:00 pm<br><br>" +
+        "Wednesday-Friday: 5:00-6:00 pm";
+
     featImg.src = "./public/images/group.webp";
 };
 
 const soloFunc = () => {
-    featHeader.textContent = "Solo";
+    featHeader.textContent = "Why Are You Solo ?";
     featParag.textContent =
         "pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum repellendus";
+    featSubTitle.textContent = "When comes Solo Your Time.";
+    featList.innerHTML =
+        "Saturday-Sunday: 5:00-7:00 pm<br><br>" +
+        "Monday-Tuesday: 10:00-11:00 pm<br><br>" +
+        "Wednesday-Friday: 8:00-9:00 am";
     featImg.src = "./public/images/solo.jpg";
 };
 
 const stretchingFunc = () => {
-    featHeader.textContent = "Stretching";
+    featHeader.textContent = "Why Are You Stretching ?";
     featParag.textContent =
         "pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum repellendus";
+    featSubTitle.textContent = "When comes Stretching Your Time.";
+    featList.innerHTML =
+        "Saturday-Sunday: 8:30-9:45 am<br><br>" +
+        "Monday-Tuesday: 11:00-12:30 pm<br><br>" +
+        "Wednesday-Friday: 5:00-6:00 pm";
     featImg.src = "./public/images/stret.webp";
 };
 
@@ -97,22 +116,13 @@ galleryDiv.addEventListener("click", (event) => {
 
 // BMI CALCULATOR
 
-document.getElementById("boy").addEventListener("input", calculateBMI);
-document.getElementById("kilo").addEventListener("input", calculateBMI);
 
-function calculateBMI(){
-    const weight = document.getElementById("kilo").value;
-    const height = document.getElementById("height").value/100;
-    const bmi = weight / (height * height);
 
-    moveTriangle(bmi);
 
-}
+const height = document.querySelector("#height");
+const weight = document.querySelector("#weight");
 
-function moveTriangle(bmi){
-    const triangle = document.getElementById("triangle");
-    const containerWidth = document.getElementById("triangle-container").offsetWidth;
-    const position = (bmi/100)* containerWidth;
-
-    triangle.style.left = `${position}px`;
-}
+weight.addEventListener("input", () => {
+    let bmi = weight.value / ((height.value / 100) ** 2);
+    console.log("BMI:", bmi);
+});

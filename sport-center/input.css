@@ -9,6 +9,8 @@
     border-right: 10px solid transparent;
     border-bottom: 20px solid orange;
     position: absolute;
+    left: 0;
+    transition: left 0.5s;
 }
 
 .yoga, .group, .solo, .stretching {

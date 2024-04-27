@@ -41,7 +41,7 @@
             <a class="block" href="#trainer">Trainer</a>
             <a class="block" href="#review">Review</a>
             <a class="block" href="#contact">Contact</a>
-            <a href="#" class=" block bg-amber-500 rounded-md px-1 pb-1 text-ligthGrey">JOIN US</a>
+            <a href="#" class=" block bg-orange rounded-md px-1 pb-1 text-ligthGrey">JOIN US</a>
         </div>
     </div>
 </header>
@@ -76,10 +76,10 @@
 
                     <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
                         <a href="#"
-                           class="bg-blue border-2 border-blue text-ligthGrey font-bold hover:bg-amber-500 px-6 py-2 mr-10 rounded-sm  ">Sign
+                           class="bg-blue border-2 border-blue text-ligthGrey font-bold hover:bg-orange px-6 py-2 mr-10 rounded-sm  ">Sign
                             Up</a>
                         <a href="#"
-                           class=" text-ligthGrey border-2 border-white font-bold hover:bg-amber-500 px-6 py-2 mr-10 sm:mr-0 rounded-sm ">Details</a>
+                           class=" text-ligthGrey border-2 border-white font-bold hover:bg-orange px-6 py-2 mr-10 sm:mr-0 rounded-sm ">Details</a>
                     </div>
                     <br>
                 </div>
@@ -113,16 +113,16 @@
 <section id="classes" class="bg-ligthGrey py-12 ">
     <div class=" text-center">
         <h2 class="text-4xl font-bold text-blue">Our Classes</h2>
-        <hr class="border-4 border-amber-500 my-8 w-28 mx-auto rounded">
+        <hr class="border-4 border-orange my-8 w-28 mx-auto rounded">
         <p class="mx-28 sm:mx-72">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dignissimos incidunt libero
             necessitatibus, nobis numquam obcaecati quia sapiente sit tempora.</p>
     </div>
 
     <div id="btnsDiv" class="container mx-auto grid grid-cols-2 sm:grid-cols-8 gap-5 sm:gap-10 sm:mt-10 mt-5">
-        <button id="yoga" class=" yoga bg-blue text-ligthGrey mx-10 sm:mx-0 sm:col-start-3 sm:mr-10 py-2 rounded hover:bg-amber-500 font-extrabold">Yoga </button>
-        <button id="group" class=" group bg-blue text-ligthGrey mx-10 sm:mx-0 rounded sm:mr-10 hover:bg-amber-500 font-extrabold">Group </button>
-        <button id="solo" class="solo bg-blue text-ligthGrey rounded sm:mx-0 mx-10 sm:mr-10 py-2 hover:bg-amber-500 font-extrabold">Solo</button>
-        <button id="stretching" class="stretching bg-blue text-ligthGrey mx-10 sm:mx-0 rounded hover:bg-amber-500 font-extrabold"> Stretching </button>
+        <button id="yoga" class=" yoga bg-blue text-ligthGrey mx-10 sm:mx-0 sm:col-start-3 sm:mr-10 py-2 rounded hover:bg-darkOrange font-extrabold">Yoga </button>
+        <button id="group" class=" group bg-blue text-ligthGrey mx-10 sm:mx-0 rounded sm:mr-10 hover:bg-darkOrange font-extrabold">Group </button>
+        <button id="solo" class="solo bg-blue text-ligthGrey rounded sm:mx-0 mx-10 sm:mr-10 py-2 hover:bg-darkOrange font-extrabold">Solo</button>
+        <button id="stretching" class="stretching bg-blue text-ligthGrey mx-10 sm:mx-0 rounded hover:bg-darkOrange font-extrabold"> Stretching </button>
     </div>
     <div id="feat-cont" class="container mx-auto flex flex-wrap align-middle gap-10 py-10 mt-10 justify-center">
         <div class="flex flex-col justify-center align-middle gap-5 w-10/12 sm:w-5/12">
@@ -133,16 +133,18 @@
                 pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum
                 repellendus
                 architecto ducimus explicabo reiciendis alias quasi culpa libero amet similique nisi!</p>
-            <h2 class="text-2xl font-extrabold text-gray-600">When comes Yoga Your Time.</h2>
-            <p class="text-gray-700">Saturday-Sunday: 8:00-10:00 am</p>
-            <p class="text-gray-700">Monday-Tuesday: 10:00-12:00 pm</p>
-            <p class="text-gray-700">Wednesday-Friday: 3:00-6:00 pm</p>
+            <h2 id="subtitle" class="text-2xl font-extrabold text-gray-600">When comes Yoga Your Time.</h2>
+            <ul class="text-gray-700 ">
+                <li class="pb-3">Saturday-Sunday: 8:00-10:00 am</li>
+                <li class="pb-3">Monday-Tuesday: 10:00-12:00 pm</li>
+                <li>Wednesday-Friday: 3:00-6:00 pm</li>
+            </ul>
         </div>
         <img class="w-96 " src="./public/images/yoga.jpg" alt="">
     </div>
 </section>
 
-<section class="bg-ligthGrey py-12">
+<section class="bg-skyBlue py-12">
     <div class="container mx-auto flex flex-wrap align-middle gap-10 py-10 justify-center">
         <div class="flex flex-col justify-center align-middle gap-10 w-10/12 sm:w-5/12">
             <h2 class="text-4xl font-bold text-blue">BMI Calculator</h2>
@@ -153,14 +155,14 @@
 
             <form class="flex flex-col sm:flex-row sm:gap-3 ">
                 <div class="mb-4 flex flex-row items-center">
-                    <input type="number" id="boy" name="boy" class="mt-1 p-1 border border-gray-700 rounded w-56 sm:w-full"
+                    <input type="text" id="height" name="height" class="mt-1 p-1 border border-gray-700 rounded w-56 sm:w-full"
                            placeholder="Your Height">
-                    <label for="boy" class="block text-gray-700 pl-2">cm</label>
+                    <label for="height" class="block text-gray-700 pl-2">cm</label>
                 </div>
                 <div class="mb-4 flex flex-row items-center">
-                    <input type="number" id="kilo" name="kilo" class="mt-1 p-1 border border-gray-700 rounded w-56 sm:w-full"
+                    <input type="text" id="weight" name="weight" class="mt-1 p-1 border border-gray-700 rounded w-56 sm:w-full"
                            placeholder="Your Weight">
-                    <label for="kilo" class="block text-gray-700 pl-2">kg</label>
+                    <label for="weight" class="block text-gray-700 pl-2">kg</label>
                 </div>
             </form>
         </div>
@@ -168,17 +170,17 @@
             <p class="text-center font-bold">Your BMI</p>
             <img class="w-96" src="./public/images/bmi-index.jpg" alt="">
             <div id="triangle-container" class="relative w-full ">
-                <div class="triangle" id="triangle"></div>
+                <div class="triangle relative w-full" id="triangle"></div>
             </div>
         </div>
     </div>
 </section>
 
 
-<section id="trainer" class="bg-sky-50 py-12 ">
+<section id="trainer" class="bg-skyBlue py-12 ">
     <div class=" text-center pb-5">
         <h2 class="text-4xl font-bold text-blue">Our Best Trainers</h2>
-        <hr class="border-4 border-amber-500 my-8 w-28  mx-auto rounded">
+        <hr class="border-4 border-darkOrange my-8 w-28  mx-auto rounded">
         <p class="mx-28 sm:mx-72">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dignissimos incidunt libero
             necessitatibus, nobis numquam obcaecati quia sapiente sit tempora.</p>
     </div>
@@ -286,10 +288,10 @@
 
 </section>
 
-<section id="review" class="bg-sky-50 py-12 ">
+<section id="review" class="bg-skyBlue py-12 ">
     <div class=" text-center pb-5">
         <h2 class="text-4xl font-bold text-blue">REVIEW CLIENT</h2>
-        <hr class="border-4 border-amber-500 my-8 w-28 mx-auto rounded">
+        <hr class="border-4 border-darkOrange my-8 w-28 mx-auto rounded">
         <p class="mx-28 sm:mx-72">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dignissimos incidunt libero
             necessitatibus, nobis numquam obcaecati quia sapiente sit tempora.</p>
     </div>
@@ -331,7 +333,7 @@
 <section id="contact" class="bg-ligthGrey py-12 ">
     <div class=" text-center pb-5">
         <h2 class="text-4xl font-bold text-blue">CONTACT US </h2>
-        <hr class="border-4 border-amber-500 my-8 w-28 mx-auto rounded">
+        <hr class="border-4 border-darkOrange my-8 w-28 mx-auto rounded">
         <p class="mx-28 sm:mx-72">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dignissimos incidunt libero
             necessitatibus, nobis numquam obcaecati quia sapiente sit tempora.</p>
     </div>
@@ -406,6 +408,6 @@
 
 </footer>
 
-<script type="module" src="/main.js"></script>
+<script type="module" src="./main.js"></script>
 </body>
 </html>
