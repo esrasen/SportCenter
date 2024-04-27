@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="tr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="output.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vite App</title>
+    <title>Sport Center App</title>
 </head>
 <body>
 <header class="fixed top-0 z-10 transparent-header w-full" id="navbar">
@@ -45,19 +45,7 @@
         </div>
     </div>
 </header>
-<script>
-    const menuButton =document.getElementById('menu-button');
-    const menu = document.getElementById('menu');
-    const menuList = document.querySelectorAll('#menu a');
-    menuButton.addEventListener('click',()=>{
-        menu.classList.toggle('hidden');
-    });
-    menuList.forEach((item)=>{
-        item.addEventListener('click',()=>{
-            menu.classList.add('hidden');
-        });
-    });
-</script>
+
 <div class="relative section-header pt-20">
     <div>
         <section id="home" class="container mx-auto ">
@@ -144,7 +132,7 @@
     </div>
 </section>
 
-<section class="bg-skyBlue py-12">
+<section class="bg-ligthGrey py-12">
     <div class="container mx-auto flex flex-wrap align-middle gap-10 py-10 justify-center">
         <div class="flex flex-col justify-center align-middle gap-10 w-10/12 sm:w-5/12">
             <h2 class="text-4xl font-bold text-blue">BMI Calculator</h2>
@@ -155,12 +143,12 @@
 
             <form class="flex flex-col sm:flex-row sm:gap-3 ">
                 <div class="mb-4 flex flex-row items-center">
-                    <input type="text" id="height" name="height" class="mt-1 p-1 border border-gray-700 rounded w-56 sm:w-full"
+                    <input type="number" id="height" name="height" class="mt-1 p-1 border border-gray-700 rounded w-56 sm:w-full"
                            placeholder="Your Height">
                     <label for="height" class="block text-gray-700 pl-2">cm</label>
                 </div>
                 <div class="mb-4 flex flex-row items-center">
-                    <input type="text" id="weight" name="weight" class="mt-1 p-1 border border-gray-700 rounded w-56 sm:w-full"
+                    <input type="number" id="weight" name="weight" class="mt-1 p-1 border border-gray-700 rounded w-56 sm:w-full"
                            placeholder="Your Weight">
                     <label for="weight" class="block text-gray-700 pl-2">kg</label>
                 </div>
@@ -173,9 +161,9 @@
                 <div class="triangle relative w-full" id="triangle"></div>
             </div>
         </div>
+
     </div>
 </section>
-
 
 <section id="trainer" class="bg-skyBlue py-12 ">
     <div class=" text-center pb-5">
@@ -185,7 +173,7 @@
             necessitatibus, nobis numquam obcaecati quia sapiente sit tempora.</p>
     </div>
 
-    <div class="grid gap-10 grid-cols-1 px-40 sm:px-0 sm:grid-cols-5 items-center  ">
+    <div class="grid gap-10 grid-cols-1 px-20 sm:px-0 sm:grid-cols-5 items-center  ">
         <div class="box sm:col-start-2 relative overflow-hidden p-2 ">
             <img src="./public/images/trainer1.jpg" class="rounded-lg object-cover border-2 border-amber-500 " alt="">
             <div class="content2"></div>
@@ -330,6 +318,7 @@
         </div>
     </div>
 </section>
+
 <section id="contact" class="bg-ligthGrey py-12 ">
     <div class=" text-center pb-5">
         <h2 class="text-4xl font-bold text-blue">CONTACT US </h2>
@@ -373,7 +362,7 @@
 </section>
 
 <footer class="bg-blue py-10">
-    <div class="mx-20 sm:mx-40 gap-5   ">
+    <div class="mx-8 sm:mx-40 gap-5   ">
         <div class="flex gap-10">
             <img src="./public/images/logo.png" class="w-44" alt="">
         </div>
@@ -408,6 +397,7 @@
 
 </footer>
 
+<script src="theme.js"></script>
 <script type="module" src="./main.js"></script>
 </body>
 </html>
