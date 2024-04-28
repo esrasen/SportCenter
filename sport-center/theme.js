@@ -13,6 +13,7 @@ menuList.forEach((item) => {
 
 
 // BMI CALCULATOR
+//Değerlendirm kriteri 8
 document.getElementById("height").addEventListener("input", calculateBMI);
 document.getElementById("weight").addEventListener("input", calculateBMI);
 

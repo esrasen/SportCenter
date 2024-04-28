@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Triangle creation */
 .triangle {
     width: 0;
     height: 0;
@@ -12,6 +14,8 @@
     left: 0;
     transition: left 0.5s;
 }
+
+/* Classes button for hover effect */
 
 .yoga, .group, .solo, .stretching {
     position: relative;
@@ -30,18 +34,12 @@
 }
 
 
-.card:hover .shop {
-    background-color: var(--main-color);
-    color: var(--text-color);
-    border-radius: 5px;
-}
-
-
 :root {
     --text-color: #fff;
     --main-color: #355592;
 }
 
+/* Training box hover effect */
 .box::before {
     content: '';
     position: absolute;
@@ -77,6 +75,8 @@
     height: 45%;
     top: 40%;
 }
+
+/* Değerlendirme kriteri 12 */
 
 .content {
     position: absolute;
@@ -132,6 +132,7 @@
     opacity: 1;
 }
 
+/* Banner image for review box */
 .review {
     position: relative;
 }
@@ -156,12 +157,19 @@
     clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
-.card:hover .cart {
+/* Purchase button hover effect */
+
+.card:hover .shop {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border-radius: 5px;
 }
 
 .card:hover .cart {
     color: theme('colors.yellow');
 }
+
+/* Background image */
 
 .transparent-header {
     transition: background-color 0.5s ease;

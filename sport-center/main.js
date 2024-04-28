@@ -1,5 +1,6 @@
+//Navbar scroll effect
+//Değerlendirme kriteri 9
 const navbar = document.querySelector("#navbar");
-
 window.addEventListener("scroll", (event) => {
     const scroll = window.scrollY;
     if (scroll > 60) {
@@ -10,6 +11,8 @@ window.addEventListener("scroll", (event) => {
     }
 });
 
+//Function to change the content of #feat-cont according to the button clicked.
+//Değerlendirme kriteri 11
 const featHeader = document.querySelector("#feat-cont h2");
 const featParag = document.querySelector("#feat-cont p");
 const featImg = document.querySelector("#feat-cont img");
@@ -62,7 +65,7 @@ const stretchingFunc = () => {
     featImg.src = "./public/images/stret.webp";
 };
 
-
+//Event listener to change the content of #feat-cont according to the button clicked.
 const btns = document.querySelector("#btnsDiv");
 
 btns.addEventListener("click", (event) => {
