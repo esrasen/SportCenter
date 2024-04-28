@@ -78,6 +78,14 @@ Projeyi IDE'nizde açın ve `Main` sınıfını çalıştırın.
 <p align="justify"> 
 
 
+  <img src="img/1.png" alt="Sistem Ana Görseli">
+  <img src="img/2.png" alt="Sistem Ana Görseli">
+  <img src="img/3.png" alt="Sistem Ana Görseli">
+  <img src="img/4.png" alt="Sistem Ana Görseli">
+  <img src="img/5.png" alt="Sistem Ana Görseli">
+  <img src="img/6.png" alt="Sistem Ana Görseli">
+  <img src="img/7.png" alt="Sistem Ana Görseli">
+
 </p>
 
 
