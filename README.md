@@ -93,26 +93,43 @@ Projeyi IDE'nizde açın ve `Main` sınıfını çalıştırın.
 
 <!-- PROGRAM SCREENSHOTS -->
 <h2 id="mobile"> :camera: Mobil Görünüm</h2>
-
-<p align="justify"> 
-
-
+<style>
+.image-row{
+overflow: hidden;
+display: flex;
+justify-content: space-around;
+margin-bottom: 20px;
+}
+.image-row img{
+width: 30%;
+height: auto;
+}
+</style>
+<div class="image-row">
   <img src="img/mobile/1.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/2.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/3.jpg" alt="Sistem Ana Görseli">
+</div>
+<div class="image-row">
   <img src="img/mobile/4.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/5.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/6.jpg" alt="Sistem Ana Görseli">
+</div>
+<div class="image-row">
   <img src="img/mobile/7.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/8.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/9.jpg" alt="Sistem Ana Görseli">
+</div>
+<div class="image-row">
   <img src="img/mobile/10.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/11.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/12.jpg" alt="Sistem Ana Görseli">
+</div>
+<div class="image-row">
   <img src="img/mobile/13.jpg" alt="Sistem Ana Görseli">
   <img src="img/mobile/14.jpg" alt="Sistem Ana Görseli">
+</div>
 
-</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- CONTACT -->
